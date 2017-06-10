@@ -1,0 +1,34 @@
+1.  Basic integer types defined in C vary their sizes across platforms. Hence to make code more portable <stdint.h>
+    was introduced which makes code portable and support new int types that remain same across various platforms.
+    
+2.  It tells us that int used is those many bits wide. e.g: int8_t is 8 bits wide.
+
+3.  for 32bit architcture:
+    BYTE is 1 byte
+	DWORD is 4 bytes
+	LONG is 4 bytes
+	WORD is 2 bytes
+
+4.  First two bytes of BMP file are WORD and DWORD; WORD denotes the file type; must be BM.
+    DWORD denotes bfSize the size, in bytes, of the bitmap file.
+
+5.  bfSize specifies the size, in bytes, of the bitmap file. biSize specifies the size of the structure in bytes.
+
+6.  If biHeight is negative, the bitmap is a top-down DIB (device-independent bitmap) and its origin is the upper left corner.
+
+7.  The biBitCount member of the BITMAPINFOHEADER structure specifies he BMP’s color depth (i.e., bits per pixel)
+
+8.  If file pointer returned NULL-->
+        for line 24:
+            it would return 2 giving msg the file could not be opened.
+        for line 37:
+            it would return 3 giving msg file could not be created.
+        
+9.  So that it will read from the file 1 time each time reading size = sizeof(RGBtriple).
+
+10. It assigns the value 3
+
+11. It allows us to rewind or fast-forward within the file. Specifically to seek from(move position ptr to)
+    start, middle or at end of file.
+
+12. SEEK_CUR indicates the current position of the position pointer.

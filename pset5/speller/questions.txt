@@ -1,0 +1,16 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is the longest word in the dictionary.
+
+1.  Returns resource usage measures for its parameter 'who'
+
+2.  16
+
+3.  Because C requires passing structs by reference in functions, because by value, the size would be too big
+
+4.  In speller.c using a for loop word from file are read character by character until EOF. If word is a character or an 
+    apostrophe it is added to word. If length word is greater than max length specified or if it is a digit that word is 
+    discarded. if the word exist it is counted, checked for spelling and printed(if misspelled).
+        Amt of time required to check the word is stored in time_check.
+        
+5.  I guess, to keep an account of digits and other characters(punctuations) we didn't use fscanf
+
+6.  Because word LENGTH and DICTIONARY are declared as constants. (constant means whose value does not change)
